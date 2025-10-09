@@ -33,8 +33,7 @@ const ProjectsSection = () => {
       image: pulseProject,
       technologies: ["React.js", "HTML", "TailwindCss"],
       liveUrl: "#",
-      githubUrl:
-        "https://github.com/Oyoo-Frankline/Pulse-Sound/tree/main/Ecommerce-shop",
+      githubUrl: "https://github.com/Oyoo-Frankline/Pulse-Sound",
       category: "Mini-Ecommerce",
     },
     {
@@ -50,7 +49,7 @@ const ProjectsSection = () => {
         "Media Queries",
         "Responsive Design",
       ],
-      liveUrl: "https://zuri-brands-limited.vercel.app/",
+      liveUrl: "#",
       githubUrl: "https://github.com/Oyoo-Frankline/Zuri-Brands-Limited",
       category: "Web-Development",
     },
