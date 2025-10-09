@@ -33,7 +33,8 @@ const ProjectsSection = () => {
       image: pulseProject,
       technologies: ["React.js", "HTML", "TailwindCss"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl:
+        "https://github.com/Oyoo-Frankline/Pulse-Sound/tree/main/Ecommerce-shop",
       category: "Mini-Ecommerce",
     },
     {
