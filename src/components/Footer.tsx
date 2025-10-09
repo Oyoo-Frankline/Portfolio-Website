@@ -61,9 +61,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-lg">Get In Touch</h4>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>📧 oyoofrankline@gmail.com</p>
-              <p>📱 +254 757 323 317</p>
-              <p>📍 Nairobi, Kenya</p>
+              <p> oyoofrankline@gmail.com</p>
+              <p>+254 757 323 317</p>
+              <p>Nairobi, Kenya</p>
               <p className="mt-4">
                 Available for freelance projects and full-time opportunities.
               </p>
@@ -75,7 +75,7 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
             © {currentYear} Frankline. All rights reserved.
           </p>
-
+          S
           <Button
             variant="glass"
             size="sm"

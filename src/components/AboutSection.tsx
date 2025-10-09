@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import { Card } from './ui/card';
+import { useEffect, useRef } from "react";
+import { Card } from "./ui/card";
 
 const AboutSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -9,14 +9,14 @@ const AboutSection = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
+            entry.target.classList.add("revealed");
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    const elements = sectionRef.current?.querySelectorAll('.scroll-reveal');
+    const elements = sectionRef.current?.querySelectorAll(".scroll-reveal");
     elements?.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
@@ -28,7 +28,7 @@ const AboutSection = () => {
     "I work with tools like the MERN stack (MongoDB, Express.js, React.js, Node.js) and modern frameworks like Next.js and TypeScript to build fast, scalable web applications.",
     "On the front end, I focus on clean, responsive design using React, Next.js, and Tailwind CSS. On the back end, I build reliable, secure APIs using Express.js, connected to databases like MongoDB and MySQL.",
     "I'm also experienced in eCommerce development (Shopify, WooCommerce), DevOps workflows (Git, CI/CD, Docker), and WordPress (Elementor).",
-    "Beyond coding, I have a strong background in technical support and CRM systems (Zendesk, Salesforce, Freshdesk)."
+    "Beyond coding, I have a strong background in technical support and CRM systems (Zendesk, Salesforce, Freshdesk).",
   ];
 
   return (
@@ -45,7 +45,7 @@ const AboutSection = () => {
           {/* Content */}
           <div className="scroll-reveal space-y-6">
             {aboutText.map((paragraph, index) => (
-              <p 
+              <p
                 key={index}
                 className="text-muted-foreground leading-relaxed text-lg"
                 style={{ animationDelay: `${index * 0.1}s` }}
@@ -58,20 +58,20 @@ const AboutSection = () => {
           {/* Stats Cards */}
           <div className="scroll-reveal grid grid-cols-2 gap-4">
             <Card className="glass p-6 text-center hover:shadow-lg transition-all duration-300">
-              <div className="text-3xl font-bold gradient-text mb-2">50+</div>
+              <div className="text-3xl font-bold gradient-text mb-2">25+</div>
               <div className="text-muted-foreground">Projects Completed</div>
             </Card>
-            
+
             <Card className="glass p-6 text-center hover:shadow-lg transition-all duration-300">
-              <div className="text-3xl font-bold gradient-text mb-2">3+</div>
+              <div className="text-3xl font-bold gradient-text mb-2">2+</div>
               <div className="text-muted-foreground">Years Experience</div>
             </Card>
-            
+
             <Card className="glass p-6 text-center hover:shadow-lg transition-all duration-300">
-              <div className="text-3xl font-bold gradient-text mb-2">25+</div>
+              <div className="text-3xl font-bold gradient-text mb-2">20+</div>
               <div className="text-muted-foreground">Happy Clients</div>
             </Card>
-            
+
             <Card className="glass p-6 text-center hover:shadow-lg transition-all duration-300">
               <div className="text-3xl font-bold gradient-text mb-2">100%</div>
               <div className="text-muted-foreground">Success Rate</div>
