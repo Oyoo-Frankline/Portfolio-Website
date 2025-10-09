@@ -17,10 +17,10 @@ const SkillsSection = () => {
     { name: "Express.js", level: 87, color: "from-gray-600 to-gray-400" },
     { name: "MongoDB", level: 97, color: "from-green-600 to-green-400" },
     { name: "MySQL", level: 89, color: "from-blue-600 to-indigo-400" },
+    { name: "PHP", level: 80, color: "from-orange-500 to-red-400" },
     { name: "Python", level: 92, color: "from-yellow-600 to-blue-500" },
     { name: "WordPress", level: 97, color: "from-blue-800 to-blue-600" },
     { name: "Git & GitHub", level: 91, color: "from-gray-800 to-gray-600" },
-    { name: "PHP", level: 94, color: "from-orange-500 to-red-400" },
   ];
 
   useEffect(() => {

@@ -29,7 +29,7 @@ const ProjectsSection = () => {
     {
       title: "Pulse Sound",
       description:
-        "Modern e-learning platform with real-time features, course management, and JWT authentication. Features live chat functionality and comprehensive student dashboard.",
+        "Pulse Sound is a modern e-commerce website dedicated to headphones and audio accessories. The platform features a sleek, responsive design, intuitive product browsing, secure checkout, and detailed product pages to help users find the perfect headphones for their needs. Built with React.js and Tailwind CSS, Pulse Sound delivers a seamless shopping experience for audio enthusiasts.",
       image: pulseProject,
       technologies: ["React.js", "HTML", "TailwindCss"],
       liveUrl: "#",

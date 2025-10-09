@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
-import { Card } from './ui/card';
-import { Code, Smartphone, Palette, Globe } from 'lucide-react';
+import { useEffect, useRef } from "react";
+import { Card } from "./ui/card";
+import { Code, Smartphone, Palette, Globe } from "lucide-react";
 
 const ServicesSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -8,28 +8,40 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Code,
-      title: 'Web Development',
-      description: 'I create stunning, responsive websites that drive engagement and provide exceptional user experiences using modern technologies like React, Node.js, and advanced frameworks.',
-      features: ['Responsive Design', 'Fast Loading', 'SEO Optimized', 'Modern Technologies']
+      title: "Web Development",
+      description:
+        "I create stunning, responsive websites that drive engagement and provide exceptional user experiences using modern technologies like React, Node.js, and advanced frameworks.",
+      features: [
+        "Responsive Design",
+        "Fast Loading",
+        "SEO Optimized",
+        "Modern Technologies",
+      ],
     },
     {
       icon: Smartphone,
-      title: 'Software Development',
-      description: 'Custom software solutions tailored to your business needs, from desktop applications to complex web systems that streamline your operations.',
-      features: ['Custom Solutions', 'Scalable Architecture', 'API Development', 'Database Design']
+      title: "Software Development",
+      description:
+        "Custom software solutions tailored to your business needs, from desktop applications to complex web systems that streamline your operations.",
+      features: [
+        "Custom Solutions",
+        "Scalable Architecture",
+        "API Development",
+        "Database Design",
+      ],
     },
     {
       icon: Globe,
-      title: 'WordPress Development',
-      description: 'Dynamic WordPress sites with modern features, custom themes, and powerful functionality that grows with your business needs.',
-      features: ['Custom Themes', 'Plugin Development', 'E-commerce Integration', 'Performance Optimization']
+      title: "WordPress Development",
+      description:
+        "Dynamic WordPress sites with modern features, custom themes, and powerful functionality that grows with your business needs.",
+      features: [
+        "Custom Themes",
+        "Plugin Development",
+        "E-commerce Integration",
+        "Performance Optimization",
+      ],
     },
-    {
-      icon: Palette,
-      title: 'UX/UI Design',
-      description: 'Intuitive and visually appealing designs for web and mobile platforms that enhance user experience and drive conversions.',
-      features: ['User Research', 'Wireframing', 'Prototyping', 'Visual Design']
-    }
   ];
 
   useEffect(() => {
@@ -37,21 +49,25 @@ const ServicesSection = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
+            entry.target.classList.add("revealed");
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    const elements = sectionRef.current?.querySelectorAll('.scroll-reveal');
+    const elements = sectionRef.current?.querySelectorAll(".scroll-reveal");
     elements?.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
   }, []);
 
   return (
-    <section ref={sectionRef} id="services" className="py-20 px-4 bg-background-secondary">
+    <section
+      ref={sectionRef}
+      id="services"
+      className="py-20 px-4 bg-background-secondary"
+    >
       <div className="container mx-auto max-w-6xl">
         <div className="scroll-reveal text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -67,7 +83,7 @@ const ServicesSection = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card 
+              <Card
                 key={index}
                 className="scroll-reveal glass p-8 hover:shadow-lg transition-all duration-300 group"
                 style={{ animationDelay: `${index * 0.1}s` }}
@@ -86,7 +102,9 @@ const ServicesSection = () => {
                   {service.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-gradient-to-r from-primary to-secondary rounded-full" />
-                      <span className="text-sm text-muted-foreground">{feature}</span>
+                      <span className="text-sm text-muted-foreground">
+                        {feature}
+                      </span>
                     </div>
                   ))}
                 </div>
