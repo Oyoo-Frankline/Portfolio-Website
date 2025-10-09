@@ -26,7 +26,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-background-tertiary border-t border-white/10">
+    <footer className="bg-background-tertiary border-t border-white/10 ">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
@@ -75,7 +75,7 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
             © {currentYear} Frankline. All rights reserved.
           </p>
-          S
+
           <Button
             variant="glass"
             size="sm"

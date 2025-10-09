@@ -27,8 +27,7 @@ const AboutSection = () => {
     "With training from Moringa School, Power Learn Project Academy, and ALX Africa, I've built a strong foundation in both front-end and back-end development, and I love bringing it all together to solve real-world problems.",
     "I work with tools like the MERN stack (MongoDB, Express.js, React.js, Node.js) and modern frameworks like Next.js and TypeScript to build fast, scalable web applications.",
     "On the front end, I focus on clean, responsive design using React, Next.js, and Tailwind CSS. On the back end, I build reliable, secure APIs using Express.js, connected to databases like MongoDB and MySQL.",
-    "I'm also experienced in eCommerce development (Shopify, WooCommerce), DevOps workflows (Git, CI/CD, Docker), and WordPress (Elementor).",
-    "Beyond coding, I have a strong background in technical support and CRM systems (Zendesk, Salesforce, Freshdesk).",
+    "In addition to my full-stack expertise, I have extensive experience in WordPress development, specializing in eCommerce solutions using WooCommerce and page building with Elementor. I focus on custom WordPress theme development, creating responsive, accessible designs, and integrating WooCommerce for seamless online store functionality.",
   ];
 
   return (

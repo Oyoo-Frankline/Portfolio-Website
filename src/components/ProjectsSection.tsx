@@ -2,62 +2,56 @@ import { useEffect, useRef } from "react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { ExternalLink, Github } from "lucide-react";
-import travelProject from "@/assets/project-travel.jpg";
-import educationProject from "@/assets/project-education.jpg";
-import ecommerceProject from "@/assets/project-ecommerce.png";
+import legacyProject from "@/assets/project-ecommerce.png";
+import pulseProject from "@/assets/project-Pulse.png";
+import zuriProject from "@/assets/project-ecommerce1.png";
 
 const ProjectsSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   const projects = [
     {
-      title: "Dik Dik Adventures - Tours & Travel",
+      title: "Legacy Kenya",
       description:
-        "A comprehensive travel booking platform featuring stunning destinations, tour packages, and integrated payment gateway. Built with modern React architecture and responsive design.",
-      image: travelProject,
+        "An eCommerce platform for home appliances, offering a wide range of products with a seamless shopping experience. Built with WordPress and WooCommerce, featuring a responsive design, integrated payment gateway, and user-friendly navigation.",
+      image: legacyProject,
       technologies: [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "Tailwind CSS",
+        "WordPress",
+        "WooCommerce",
+        "Elementor",
+        "PHP",
         "Payment Gateway",
-      ],
-      liveUrl: "https://www.linkedin.com/in/frankline-oyoo-992189304/",
-      githubUrl: "#",
-      category: "Web Development",
-    },
-    {
-      title: "Instacore Institute Website",
-      description:
-        "Modern e-learning platform with real-time features, course management, and JWT authentication. Features live chat functionality and comprehensive student dashboard.",
-      image: educationProject,
-      technologies: [
-        "React.js",
-        "Express.js",
-        "Node.js",
-        "Socket.IO",
-        "MongoDB",
-        "JWT Auth",
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "Education Platform",
-    },
-    {
-      title: "Zuri Brands Limited - E-commerce",
-      description:
-        "Full-featured e-commerce platform with product catalog, shopping cart, user authentication, and comprehensive REST API for seamless shopping experience.",
-      image: ecommerceProject,
-      technologies: [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "REST API",
       ],
       liveUrl: "https://legacykenya.co.ke/",
       githubUrl: "#",
-      category: "E-commerce",
+      category: "Ecommerce",
+    },
+    {
+      title: "Pulse Sound",
+      description:
+        "Modern e-learning platform with real-time features, course management, and JWT authentication. Features live chat functionality and comprehensive student dashboard.",
+      image: pulseProject,
+      technologies: ["React.js", "HTML", "TailwindCss"],
+      liveUrl: "#",
+      githubUrl: "#",
+      category: "Mini-Ecommerce",
+    },
+    {
+      title: "Zuri Brands Limited - Company Website",
+      description:
+        " A dynamic company website for Zuri Brands, a leading retailer of soaps and detergents. Built using HTML, CSS, JavaScript, and DOM manipulation, the website offers an engaging and responsive design, showcasing the company's products, values, and mission. The site is optimized for mobile devices and features smooth navigation, product details, and an about page.",
+      image: zuriProject,
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "DOM Manipulation",
+        "Media Queries",
+        "Responsive Design",
+      ],
+      liveUrl: "https://zuri-brands-limited.vercel.app/",
+      githubUrl: "https://github.com/Oyoo-Frankline/Zuri-Brands-Limited",
+      category: "Web-Development",
     },
   ];
 
