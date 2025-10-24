@@ -24,7 +24,7 @@ const AboutSection = () => {
 
   const aboutText = [
     "I'm a Web Designer, Software Developer, and AI Enthusiast passionate about turning ideas into smart, user-friendly digital experiences.",
-    "With training from Moringa School, Power Learn Project Academy, and ALX Africa, I've built a strong foundation in both front-end and back-end development, and I love bringing it all together to solve real-world problems.",
+    "With training from Power Learn Project Academy and ALX Africa, I've built a strong foundation in both front-end and back-end development, and I love bringing it all together to solve real-world problems.",
     "I work with tools like the MERN stack (MongoDB, Express.js, React.js, Node.js) and modern frameworks like Next.js and TypeScript to build fast, scalable web applications.",
     "On the front end, I focus on clean, responsive design using React, Next.js, and Tailwind CSS. On the back end, I build reliable, secure APIs using Express.js, connected to databases like MongoDB and MySQL.",
     "In addition to my full-stack expertise, I have extensive experience in WordPress development, specializing in eCommerce solutions using WooCommerce and page building with Elementor. I focus on custom WordPress theme development, creating responsive, accessible designs, and integrating WooCommerce for seamless online store functionality.",

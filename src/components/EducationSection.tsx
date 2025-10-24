@@ -11,7 +11,7 @@ const EducationSection = () => {
       title: "Bsc in Computer Science",
       institution: "Univeristy of the People",
       description:
-        " Currently pursuing a comprehensive degree program focused on computer systems, algorithms, and software development. The coursework emphasizes both theoretical and practical skills in programming, web technologies, and data structures, preparing for a career in full-stack development and software engineering.",
+        " Currently pursuing a degree program focused on computer systems, algorithms, and software development. The coursework emphasizes both theoretical and practical skills in programming, web technologies, and data structures, preparing for a career in full-stack development and software engineering.",
       color: "from-primary to-secondary",
     },
     {
@@ -27,7 +27,7 @@ const EducationSection = () => {
       title: "Software Engineering",
       institution: "Power Learn Project Academy",
       description:
-        "Successfully completed an intensive program in Software Development covering Python, web technologies, database management, Node.js, and Express.js, along with essential soft skills. Specialized in web development and Python development, gaining practical experience in building scalable and efficient applications",
+        "Successfully completed an intensive program in Software Development covering Python, web technologies such React js, Node.js, and Express.js, database management along with essential soft skills. Specialized in web development and Python development, gaining practical experience in building scalable and efficient applications",
       color: "from-secondary to-accent",
     },
     {
